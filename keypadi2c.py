@@ -49,12 +49,11 @@ class I2CKeys:
         if number in self.codes:
             return [self.codes[number] + self.code_shift]
         else:
-            out = [
+            return [
                 i + self.code_shift
                 for i in range(self.nbits)
                 if number & self.power2[i]
             ]
-            return out
 
     @property
     def events(self):
@@ -85,12 +84,7 @@ class I2CKeyPad:
         
     @property
     def events(self):
-        self._events.data.extend(
-            sum([ # using sum to flatten
-                sec.events.data
-                for sec in self.key_secs
-            ], [])
-        )
         for sec in self.key_secs:
-            sec._events.data = []
+            while event:=sec.events.get():
+                self._events.get_into(event)
         return self._events
