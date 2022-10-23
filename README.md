@@ -9,8 +9,8 @@ However, there are some differences
 - It does not have the same speed performance as the native module, which is written in C++.
     - The scan speed is adequate for regular typing. 
         - In my test with RP2040 and 4 MCP23017 IO expanders, the scan frequency is above 400Hz
-- The events are not strictly ordered according to keystrokes.
+- The events will almost follow the keystroke order but not 100% strictly.
     - This is not visible at an ordinary human being's typing speed.
-    - But might effect gameplay if keystrok order matters, such as rhythm games like DDR.
+    - But it might affect gameplay if keystroke order matters, such as in rhythm games like DDR.
 
 Please see examples for details.
