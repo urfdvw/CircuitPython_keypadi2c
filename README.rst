@@ -26,6 +26,7 @@ Another way to describe the setting is that I2C IO expanders are used to replace
 The library is designed to be compatible with the native keypad module,
 in the way that you can read key events by `keypadi2c.events.get()`.
 However, there are some differences
+
 -  It does not have the same speed performance as the native module,
    which is written in C++.
 
