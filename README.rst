@@ -35,10 +35,10 @@ However, there are some differences
 
 -  The events will almost follow the keystroke order but not 100% strictly.
 
-   -  This is not visible at an ordinary human being’s typing speed.
+   -  This is not visible at an ordinary human being's typing speed.
    -  But it might affect gameplay if keystroke order matters, such as in rhythm games like DDR.
 
-   
+
 Please see examples for details.
 
 
