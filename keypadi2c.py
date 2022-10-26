@@ -1,4 +1,35 @@
+# SPDX-FileCopyrightText: 2017 Scott Shawcroft, written for Adafruit Industries
+# SPDX-FileCopyrightText: Copyright (c) 2022 River Wang
+#
+# SPDX-License-Identifier: MIT
+"""
+`keypadi2c`
+================================================================================
+
+A CircuitPython keypad library that supports MCP I2C IO expanders.
+
+* Author(s): River Wang
+
+Implementation Notes
+--------------------
+
+**Hardware:**
+* Work with I2C IO Expanders especially:
+* MCP23017 <https://www.adafruit.com/product/732>
+* MCP23008 <https://www.adafruit.com/product/593>
+
+**Software and Dependencies:**
+* Adafruit CircuitPython firmware for the supported boards <https://circuitpython.org/downloads>
+* This library depends on `keypad` module to work, which is native to CircuitPython 7+
+* You will also need `MCP230xx` library <https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx>
+
+"""
+
+# imports
 import keypad
+
+__version__ = "0.0.0+auto.0"
+__repo__ = "https://github.com/urfdvw/CircuitPython_keypadi2c.git"
 
 class EventQueue:
     def __init__(self):
@@ -64,6 +95,7 @@ class I2CKeys:
         except Exception as e:
             print(e)
             return self._events
+
         # push events into queue
         for k in self.search_code(~keys & (self.last_keys ^ keys)):
             self._events.get_into(
@@ -73,6 +105,7 @@ class I2CKeys:
             self._events.get_into(
                 keypad.Event(key_number=k, pressed=False)
             )
+            
         # update status 
         self.last_keys = keys
         return self._events
