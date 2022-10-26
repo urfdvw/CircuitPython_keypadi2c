@@ -43,74 +43,74 @@ However, there are some differences
 Please see examples for details.
 
 
-Dependencies
-=============
-This driver depends on:
+.. Dependencies
+.. =============
+.. This driver depends on:
 
-* `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
+.. * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
 
-Please ensure all dependencies are available on the CircuitPython filesystem.
-This is easily achieved by downloading
-`the Adafruit library and driver bundle <https://circuitpython.org/libraries>`_
-or individual libraries can be installed using
-`circup <https://github.com/adafruit/circup>`_.Installing from PyPI
-=====================
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
+.. Please ensure all dependencies are available on the CircuitPython filesystem.
+.. This is easily achieved by downloading
+.. `the Adafruit library and driver bundle <https://circuitpython.org/libraries>`_
+.. or individual libraries can be installed using
+.. `circup <https://github.com/adafruit/circup>`_.Installing from PyPI
+.. =====================
+.. .. note:: This library is not available on PyPI yet. Install documentation is included
+..    as a standard element. Stay tuned for PyPI availability!
 
-.. todo:: Remove the above note if PyPI version is/will be available at time of release.
+.. .. todo:: Remove the above note if PyPI version is/will be available at time of release.
 
-On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
-PyPI <https://pypi.org/project/circuitpython-keypadi2c/>`_.
-To install for current user:
+.. On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
+.. PyPI <https://pypi.org/project/circuitpython-keypadi2c/>`_.
+.. To install for current user:
 
-.. code-block:: shell
+.. .. code-block:: shell
 
-    pip3 install circuitpython-keypadi2c
+..     pip3 install circuitpython-keypadi2c
 
-To install system-wide (this may be required in some cases):
+.. To install system-wide (this may be required in some cases):
 
-.. code-block:: shell
+.. .. code-block:: shell
 
-    sudo pip3 install circuitpython-keypadi2c
+..     sudo pip3 install circuitpython-keypadi2c
 
-To install in a virtual environment in your current project:
+.. To install in a virtual environment in your current project:
 
-.. code-block:: shell
+.. .. code-block:: shell
 
-    mkdir project-name && cd project-name
-    python3 -m venv .venv
-    source .env/bin/activate
-    pip3 install circuitpython-keypadi2c
+..     mkdir project-name && cd project-name
+..     python3 -m venv .venv
+..     source .env/bin/activate
+..     pip3 install circuitpython-keypadi2c
 
-Installing to a Connected CircuitPython Device with Circup
-==========================================================
+.. Installing to a Connected CircuitPython Device with Circup
+.. ==========================================================
 
-Make sure that you have ``circup`` installed in your Python environment.
-Install it with the following command if necessary:
+.. Make sure that you have ``circup`` installed in your Python environment.
+.. Install it with the following command if necessary:
 
-.. code-block:: shell
+.. .. code-block:: shell
 
-    pip3 install circup
+..     pip3 install circup
 
-With ``circup`` installed and your CircuitPython device connected use the
-following command to install:
+.. With ``circup`` installed and your CircuitPython device connected use the
+.. following command to install:
 
-.. code-block:: shell
+.. .. code-block:: shell
 
-    circup install keypadi2c
+..     circup install keypadi2c
 
-Or the following command to update an existing version:
+.. Or the following command to update an existing version:
 
-.. code-block:: shell
+.. .. code-block:: shell
 
-    circup update
+..     circup update
 
-Usage Example
-=============
+.. Usage Example
+.. =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the
-examples folder and be included in docs/examples.rst.
+.. .. todo:: Add a quick, simple example. It and other examples should live in the
+.. examples folder and be included in docs/examples.rst.
 
 Documentation
 =============
